@@ -1,0 +1,32 @@
+$breakpoint-tablet: 1240px;
+$breakpoint-mobile: 768px;
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+$primary-font-family: 'Open Sans', sans-serif;
+$secondary-font-family: 'Open Sans', sans-serif;
+$font-awesome: 'Font Awesome 5 Free';
+$font-awesome-brands: 'Font Awesome 5 Brands';
+
+//Colors
+$white: #fff;
+$black: #272023;
+$light-gray: #f8f8f8;
+$medium-gray: #c0bebf;
+$medium-dark-gray: #727272;
+$dark-gray: #393939;
+
+$primary: #2e73ba;
+$secondary: #7AABDB;
+$tertiary: #C3B299;
+$quaternary: #56445D;
+
+//Links
+$link-color: $primary;
+$link-color-hover: $black;
+$link-decoration: none;
+$link-decoration-hover: none;
+
+//Transitions
+$transition: .2s all linear;
+$opacity-on-hover: .8;

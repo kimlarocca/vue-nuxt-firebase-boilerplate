@@ -1,0 +1,59 @@
+@import "variables";
+
+.form-element-styles {
+  font-family: $primary-font-family;
+  font-size: .875rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: $dark-gray;
+}
+
+//overrides for foundation styles
+input[type="text"],
+select {
+  height: 3rem;
+  margin: 0 0 1rem;
+  padding: .5rem;
+  appearance: none;
+  border: 1px solid $medium-gray;
+  border-radius: 0;
+  font-family: $primary-font-family;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: $black;
+  width: 400px;
+  max-width: 100%;
+
+  &::placeholder {
+    @extend .form-element-styles;
+  }
+
+  &:focus {
+    outline: solid 1px $primary;
+  }
+
+  &.boolean-select {
+    width: 100px;
+  }
+}
+
+select {
+  option {
+    @extend .form-element-styles;
+  }
+}
+
+label {
+  font-family: $primary-font-family;
+  font-size: 1rem;
+}
+
+tr {
+  border-bottom: solid 1px white;
+  opacity: 1;
+  transition: $transition;
+  &:hover {
+    opacity: $opacity-on-hover;
+  }
+}

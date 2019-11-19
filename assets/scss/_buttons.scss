@@ -1,0 +1,50 @@
+@import 'variables';
+
+$color: $white;
+$background: $primary;
+
+button,
+.button,
+.button:visited,
+.button:active {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-family: $primary-font-family;
+  font-weight: 700;
+  padding: .75rem;
+  background-color: $background;
+  color: $color;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  border: 2px solid $background;
+  transition: $transition;
+  opacity: 1;
+  text-decoration: none;
+
+  @media all and (max-width: $breakpoint-mobile) {
+    width: 100%;
+  }
+
+  &:hover {
+    color: $color;
+    opacity: $opacity-on-hover;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.ghost {
+    background-color: transparent;
+    border: 2px solid $background;
+    color: $background;
+
+    &:hover {
+      background-color: $background;
+      color: $color;
+      opacity: 1;
+    }
+  }
+}

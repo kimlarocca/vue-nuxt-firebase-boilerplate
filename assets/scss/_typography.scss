@@ -1,0 +1,125 @@
+@import "variables";
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url('~@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot');
+  src: url('~@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+  url('~@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2') format('woff2'),
+  url('~@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff') format('woff'),
+  url('~@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf') format('truetype'),
+  url('~@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome') format('svg');
+}
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free', serif;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url('~@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot');
+  src: url('~@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+  url('~@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2') format('woff2'),
+  url('~@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff') format('woff'),
+  url('~@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf') format('truetype'),
+  url('~@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome') format('svg');
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands', serif;
+}
+
+h1,
+.like-h1 {
+  margin: 0;
+  font-size: 4.5rem;
+  line-height: 5.125rem;
+  text-transform: none;
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  @media all and (max-width: $breakpoint-mobile) {
+    font-size: 2rem;
+    line-height: 2.0625rem;
+  }
+}
+
+h2,
+.like-h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-transform: none;
+  font-family: $secondary-font-family;
+  font-weight: normal;
+  @media all and (max-width: $breakpoint-mobile) {
+    font-size: 2rem;
+  }
+}
+
+h3,
+.like-h3 {
+  margin: 0;
+  font-size: 1.6875rem;
+  line-height: 2.125rem;
+  text-transform: none;
+  font-family: $secondary-font-family;
+  font-weight: normal;
+}
+
+h4,
+.like-h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-transform: none;
+  font-weight: normal;
+  font-family: $primary-font-family;
+
+  &.strong {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+h5,
+.like-h5 {
+  margin: 0;
+  text-transform: none;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  font-family: $primary-font-family;
+}
+
+h6,
+.like-h6 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  font-family: $primary-font-family;
+  font-weight: 600;
+}
+
+p {
+  font-size: .9375rem;
+  line-height: 1.25rem;
+  margin: 0 0 1rem;
+  text-transform: none;
+  font-family: $primary-font-family;
+}
+
+strong,
+.strong{
+  font-weight: 600;
+}
+
+em,
+.em {
+  font-style: italic;
+}
